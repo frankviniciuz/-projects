@@ -1,0 +1,53 @@
+/* ESTILO 01: resetando o estilo da página removendo os espaçamentos
+internos e margens e aplicando o box-sizing: border-box.*/
+* {
+    box-sizing:border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ESTILO 02: estilizando a tag header aplicando espaçamento, cor de fundo e
+cor para os textos e links, removemos o underline dos links e mudamos a
+exibição dos itens de lista (<li>) do menu para que fiquem um ao lado do
+outro.
+*/
+header {
+    padding:16px 0px;
+    background-color: #182C61;
+    color: #ECF0F1;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a {
+    color: #ECF0F1;
+    text-decoration: none;
+}
+
+/* ESTILO 03: criamos a classe container limitando sua largura em 1250px e
+centralizando-o. Com isso o conteúdo do site estará centralizado e o
+ocupará até 1250px desde que o monitor tenha essa resolução na
+largura. 
+*/
+.container {
+    max-width: 1250px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+/* ESTILO 04: sobrescrevemos o CSS do container dentro do header para
+usarmos display: flex e os itens do cabeçalho (título e menu) fiquem lado
+a lado.
+Com align-items: center centralizamos o conteúdo na vertical e com
+justify-contente: space-between distribuímos os elementos aplicando
+uma margem igualitária, o título ficará na extrema esquerda e o menu na
+extrema direita.*/
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
