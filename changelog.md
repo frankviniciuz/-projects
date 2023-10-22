@@ -13,7 +13,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Moving files index.html and style.css for the directory site_games
 - Added content to the files index.html and style.css
 - Added folders files and img in the directory
--
+- Added image epicgames
+- Moving folder files to git/projects/site_games
+- Added brands image in directory img
+- Added content file index.hmtl
+- Added image file in the directory git/project/site_games/img
+- Deleting video game tag image files
+- Added image files from epic games games
 
 
 
