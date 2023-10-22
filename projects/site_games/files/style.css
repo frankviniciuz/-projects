@@ -1,3 +1,4 @@
+
 /* ESTILO 01: resetando o estilo da página removendo os espaçamentos
 internos e margens e aplicando o box-sizing: border-box.*/
 * {
@@ -6,6 +7,26 @@ internos e margens e aplicando o box-sizing: border-box.*/
     padding: 0px;
 }
 
+
+/* ESTILO 01.1: Alterando a fonte do título principal da página
+*/
+header .container h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size:50px;
+}
+
+/* ESTILO 01.2: Alterando a fonte da lista do menu*/
+.container li a {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size:20px;
+}
+
+/* ESTILO 01.3: Alterando a fonte do body*/
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* CABEÇALHO */
 /* ESTILO 02: estilizando a tag header aplicando espaçamento, cor de fundo e
 cor para os textos e links, removemos o underline dos links e mudamos a
 exibição dos itens de lista (<li>) do menu para que fiquem um ao lado do
@@ -13,7 +34,7 @@ outro.
 */
 header {
     padding:16px 0px;
-    background-color: #182C61;
+    background-color: #666666;
     color: #ECF0F1;
 }
 
@@ -51,3 +72,125 @@ header .container {
     align-items: center;
     justify-content: space-between;
 }
+
+/* SEÇÃO SOBRE*/
+/* ESTILO 05: aproveitamos a regra CSS escrita para o container dentro do
+header e adicionamos a mesma regra para o container dentro da section,
+pois são estruturas iguais.
+*/
+header.container, section .container {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ESTIOLO 06: estilização dos logos, configurando a altura da imagem e sua
+exibição para que se apresentem uma ao lado da outra.
+*/
+.brands-list img {
+    height: 24px;
+}
+
+.brands-list li {
+    display: inline;
+    margin-right: 8px;
+}
+
+/* ESTILO 07: estilização dos elementos da section, alinhamento vertical no
+começo do container, aplicação de espaçamento interno e coloração dos
+textos.
+*/
+section .container {
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0px;
+    color: #666666
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+/* ESTILO 08:: Aplicação de margem na direita e alterando a altura da imagem.
+*/
+.store-front {
+    margin-right: 32px;
+    height:500px;
+}
+
+/* SEÇÃO CONTATO*/
+/* ESTILO 09: Sobrescrevemos o estilo de .container para que tenha o display: block e
+não flex, apenas para .container dentro de #contact.
+E criamos a classe .contact-methods, essa sim terá seus elementos lado a
+lado, com display: flex. 
+*/
+#contact .container {
+    display:block
+}
+
+.contact-methods {
+    display:flex;
+    justify-content:space-between;
+}
+
+/* SEÇÃO CONTATO - FALE CONOSCO*/
+/* ESTILO 10: Os inputs, textarea e button foram estilizados para se apresentarem
+como blocos, aplicação de margem inferior e espaçamento interno e
+configuração da largura dos elementos.
+Removemos a possibilidade de redimensionar o textarea com resize:
+none.
+Estilizamos o botão aplicando cor de fundo e alterando esta cor quando
+passar o mouse sobre ele, com o pseudo-seletor: houver.
+Alteração da cor de borda dos campos quando eles estão focados, para
+isso temos a propriedade outline-color.
+*/
+form input, form textarea, form button {
+    display:block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+    height:180px;
+}
+
+form button {
+    background-color: #666666;
+    color: #ECF0F1; 
+    border: none;
+    cursor:pointer;
+}
+
+form button:hover {
+    background-color: #314E9E;
+}
+
+input:focus, textarea:focus {
+    outline-color: #666666;
+}
+
+/* SEÇÃO CONTATO - NOS ACOMPANHE*/
+/*ESTILO 11: Configuramos a altura dos ícones, deixamos os elementos lado a lado e
+removemos o underline dos links.
+*/
+.social-links img {
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration:none;
+}
+
