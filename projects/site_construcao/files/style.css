@@ -8,6 +8,7 @@
     width: 100px;
     background-color: #fff;
     
+    
 }
 
 header{
@@ -46,8 +47,11 @@ h1 {
 }
 
 
+
+
 .about-image {
-    max-width: 1250px;
+    width: 1250px;
+    max-height: 550px;
 }
 
 body {
@@ -57,7 +61,9 @@ body {
 
 .image-container {
     position: relative;
+    border-bottom: 0px solid #E41837;
 }
+
 
 .p-container{
     position: absolute;
@@ -65,10 +71,108 @@ body {
     left: 0;
     background-color: #e418379d; 
     color: #fff; 
-    padding: 60px;
+    padding: 20px;
     z-index: 1;
     max-width: 1250px;
     font-weight: 600;
+    font-size: 20px;
+    
 }
 
 
+#services {
+    max-width: 1250px;
+    margin: 0px;
+    
+
+}
+
+#services h2 {
+    color:#E41837;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    border-bottom: 16px solid #fff;
+    font-size: 28px;
+}
+
+#services ul li {
+    border-radius: 5px;
+    background-color: #fff;
+    color: #E41837;
+    text-align: center;
+    margin: 9px 0px;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+#services .container h2 {
+    align-items: center;
+    width: 100%;
+}
+
+
+#services .container {
+    background-color: #E41837;
+    border-top: 10px solid #E41837;
+}
+
+#services .container ul {
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+
+}
+
+#services .container ul li {
+    width: 45%;
+    padding: 10px;
+    text
+
+
+}
+
+.about-image {
+    border: 0px;
+    margin: 0px;
+}
+
+
+
+#how-it-works .container{
+    max-width: 1250px;
+}
+
+#how-it-works .container .img {
+    border-top: 25px solid #E41837;
+    white-space: nowrap;
+    background-color: #E41837;
+}
+
+.img img {
+
+    display: inline-block;
+    width: 24.63%;
+    box-sizing: border-box;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+#how-it-works .container article {
+    font-size: 20px;
+    color:#E41837;
+    text-align: center;
+}
+
+article h2 {
+    margin: 20px 0px 30px 0px;
+}
+article p {
+    text-align: justify;
+    margin: 0px 50px 25px 50px;
+    font-weight: 500;
+}
