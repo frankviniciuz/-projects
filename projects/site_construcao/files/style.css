@@ -130,9 +130,6 @@ body {
 #services .container ul li {
     width: 45%;
     padding: 10px;
-    text
-
-
 }
 
 .about-image {
@@ -175,4 +172,43 @@ article p {
     text-align: justify;
     margin: 0px 50px 25px 50px;
     font-weight: 500;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    background-color: #E41837;
+}
+
+#photo-gallery {
+    text-align: center;
+    background-color: #E41837;
+    border-bottom: 5px solid #E41837;
+}
+
+#photo-gallery h2 {
+    color:#fff;
+    background-color: #E41837;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 15px solid #E41837;
+    border-bottom: 1px solid #E41837;
+    font-size: 28px;
+}
+
+.photo-gallery-img {
+    margin: 10px 10px;
+    overflow:hidden;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.546);
+    background-color: #fff;
+}
+
+.photo-gallery-img img {
+    height: 250px;
+    width: 33%;
+    display:inline;
+    border-bottom: 5px solid #E41837;
 }
